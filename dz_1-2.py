@@ -10,9 +10,9 @@ for element in pool_numbers:
     save =element
     
     while element > 0:
-        n = element % 10
+        num = element % 10
         element = element // 10
-        summa_local += n
+        summa_local += num
         
     if (summa_local % 7) == 0:
         result_summ += save
