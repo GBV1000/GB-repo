@@ -8,15 +8,15 @@ for i in range(1, 1000, 2):
 for element in pool_numbers:
     summa_local = 0
     save =element
-    
+
     while element > 0:
-        n = element % 10
+        num = element % 10
         element = element // 10
-        summa_local += n
-        
+        summa_local += num
+
     if (summa_local % 7) == 0:
         result_summ += save
-        
+
 print(f"{result_summ}")
 
 
@@ -34,13 +34,13 @@ pool_numbers = [i+17 for i in pool_numbers]
 for element in pool_numbers:
     summa_local = 0
     save =element
-    
+
     while element > 0:
-        n = element % 10
+        num = element % 10
         element = element // 10
-        summa_local += n
-        
+        summa_local += num
+
     if (summa_local % 7) == 0:
         result_summ += save
-        
+
 print(f"{result_summ}")
