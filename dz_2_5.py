@@ -2,7 +2,7 @@ prices = ['28.7','14.03','75','46.18','97.1','36.71','16.02','74.09','15.14','48
 print(prices)
 print(f'id списка  {id(prices)}\n')
 def pricess(prices):
-    st = ''
+    str_result = ''
     i = 0
     while i < len(prices):
             temp = format(float(prices[i]), '.2f')
@@ -13,8 +13,8 @@ def pricess(prices):
             kop = str(kop).zfill(2)
        
            
-            st = st + f"{rub} руб {kop} коп, "
-    print(st)
+            str_result = str_result + f"{rub} руб {kop} коп, "
+    print(str_result)
 
 print('Вовод цен , вида -  ** руб ** коп, .. : ')
 print(f'id списка  {id(prices)} \n')
