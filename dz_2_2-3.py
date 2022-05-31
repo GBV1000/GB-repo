@@ -22,16 +22,16 @@ while i < sum_elements:
     i += 1
 print(spisok_base)
 
-st = ""
+str_result = ""
 for i in spisok_base:
 
     if i =='"' and (spisok_base[spisok_base.index(i)+1]).isalpha() != True:
-        st = st +  "" + i
+        str_result = str_result +  "" + i
     elif i =='"' and (spisok_base[spisok_base.index(i)+1]).isalpha() == True: 
-        st = st + i + " "
+        str_result = str_result + i + " "
     elif i.isalpha()== True:
-        st = st  + " " + i + " "
+        str_result = str_result  + " " + i + " "
     elif i.isalpha()!=True:
-         st = st  + i
+         str_result = str_result  + i
 
-print(st)
+print(str_result)
