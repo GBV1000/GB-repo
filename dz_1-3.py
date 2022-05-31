@@ -1,7 +1,7 @@
 num_gen = 1
-
 while num_gen <= 100:
-    if num_gen > 15:
+
+  if num_gen > 15:
     num_temp = num_gen%10
 
     if num_temp == 1:
@@ -20,6 +20,7 @@ while num_gen <= 100:
       num_gen +=1
 
   else:
+
     if num_gen == 1:
       result = '{} процент'.format(num_gen)
       print(result)	
