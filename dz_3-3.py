@@ -2,9 +2,9 @@ pool = {}
 
 def thesaurus(*name):
     for i in name:
-        x=i[:1]
-        pool.setdefault(x,[])
-        pool[x].append(i)
+        first_character = i[:1]
+        pool.setdefault(first_character,[])
+        pool[first_character].append(i)
         
     return pool
 
