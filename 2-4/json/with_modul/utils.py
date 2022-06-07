@@ -10,7 +10,7 @@ def currency_rates(Valute):
 
     for i in json_data['Valute']:
         if i == Valute:
-            result = f"На {json_data['Date']} курс вылюты {json_data['Valute'][i]['CharCode']} составляет {json_data['Valute'][i]['Value']}"
+            result = f"На {json_data['Date'][0:10]} курс вылюты {json_data['Valute'][i]['CharCode']} составляет {json_data['Valute'][i]['Value']}"
 
     return result
 

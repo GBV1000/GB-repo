@@ -25,3 +25,4 @@ def currency_rates(type_xx):
 
 type_xx = input("Ведить буквенный код валюты - ").upper()
 print(currency_rates(type_xx))
+
