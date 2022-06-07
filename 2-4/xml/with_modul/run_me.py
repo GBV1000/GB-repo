@@ -1,6 +1,4 @@
-#from mod_cbr import currency_rates
-import mod_cbr
+import utils
 
-
-x = input("Ведить буквенный код валюты - ").upper()
-mod_cbr.currency_rates(x)
+Valute = input("Ввыедит аббревиатуру  валюты - ").upper()
+print(utils.currency_rates(Valute))

@@ -20,3 +20,6 @@ def currency_rates(type_xx):
 
     return  date_time_obj
 
+if __name__ == '__main__':
+    type_xx = input("Ведить буквенный код валюты - ").upper()
+    print(currency_rates(type_xx))
